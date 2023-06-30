@@ -1,0 +1,47 @@
+section.image-text-container{
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    section.image-container{
+        width: 60%;
+        background-image: url(../../../assets/images/mesh-1.webp);
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-size 0.01s ease-in-out;
+        background-repeat: no-repeat;
+        background-position: center;
+        app-dotted-sphere {
+            position: absolute;
+            width: 75%;
+        }
+        section.block{
+            color: #ffffff;
+            text-align: center;
+            h2{
+                font-size: 30px;
+            }
+            
+        }
+    }
+    section.text-container {
+        width: 40%;
+        color: #cccccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        section.block{
+            width: 40%;
+            button {
+                width: 120px;
+                padding: 10px;
+                background: #39ffb0;
+                border-radius: 5px;
+                border: 1px solid #39ffb0;
+            }
+        }
+    }
+
+}

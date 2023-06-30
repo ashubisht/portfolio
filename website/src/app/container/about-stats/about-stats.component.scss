@@ -1,0 +1,48 @@
+section.component-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    section.title h2 {
+        color: #ffffff;
+        font-size: 36px;
+    }
+    section.stats-container {
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+        margin: 5vh 0;
+
+        section.block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .number {
+                font-size: 30px;
+                margin-bottom: 2vh;
+                color: #39ffb0;
+            }
+            .caption {
+                font-size: 11px;
+                color: #646364;
+            }
+            hr{
+                border-width: 2px;
+                width: 100%;
+                border: 1px solid #646364;
+            }
+        }
+    }
+    section.waves-bg{
+        background-image: url(../../../assets/images/long-lines-waves.webp);
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        transition: background-size 0.01s ease-in-out;
+    }
+}

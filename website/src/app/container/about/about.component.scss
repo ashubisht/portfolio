@@ -1,0 +1,96 @@
+section.about-container {
+    color: #ffffff;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 5vh 0;
+    section.image-text-block {
+        display: flex;
+        min-height: 90vh;
+        margin-top: -12vh;
+        section.image-text-container {
+            width: 40vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            background-image: url(./../../../assets/images/sound-waves-3.jpg);
+            background-size: cover;
+            // background-color: #041007;
+            // background-blend-mode: screen;
+            border-right: 1px solid #484242;
+            transition: background-size 0.01s ease-in-out;
+            background-repeat: no-repeat;
+            background-position: center;
+            h2.title {
+                font-size: 16px;
+                width: 60%;
+                line-height: 20px;
+            }
+
+            p {
+                font-size: 11px;
+                width: 60%;
+            }
+        }
+
+        section.block-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0e0e0e;;
+
+            section.two-block-container {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                section.block-1,
+                section.block-2 {
+                    width: 38%;
+                    display: flex;
+                    flex-direction: column;
+                    background: #000;
+                    border-radius: 10px;
+                    margin: 5px;
+                    padding: 20px 15px;
+                    font-size: 11px;
+                    align-items: flex-start;
+
+                    section.icon {
+                        margin-bottom: 4vh;
+                    }
+                    h2.title {
+                        text-align: left;
+                        color: #54ffb0;
+                        font-size: 18px;
+                    }
+                    p{
+                        text-align: left;
+                        color: #aaaaaa;
+                    }
+                    hr {
+                        width: 100%;
+                        border-color: #222222;
+                    }
+                }
+            }
+
+            section.two-block-container.first {
+                align-content: flex-end;
+                margin-top: -30vh;
+            }
+
+            section.two-block-container.second {
+                align-content: flex-start;
+                margin-top: 5vh;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,37 @@
+<svg width="800" height="600" viewBox="0 0 800 600">
+    <style>
+      .star {
+        fill: #ffffff;
+        animation: blink 1s infinite alternate;
+        transform-origin: center;
+        animation-delay: calc(var(--delay) * 1s);
+      }
+      
+      @keyframes blink {
+        0% {
+          transform: scale(1);
+          opacity: 0.5;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.5;
+        }
+      }
+    </style>
+    
+    <rect x="0" y="0" width="800" height="600" fill="#000022" />
+    
+    <g id="stars">
+      <circle class="star" cx="200" cy="100" r="2" style="--delay: 0.3" />
+      <circle class="star" cx="300" cy="200" r="2" style="--delay: 0.8" />
+      <circle class="star" cx="400" cy="300" r="2" style="--delay: 1.2" />
+      <circle class="star" cx="500" cy="400" r="2" style="--delay: 0.5" />
+      <circle class="star" cx="600" cy="500" r="2" style="--delay: 0.9" />
+      <!-- Add more stars here... -->
+    </g>
+  </svg>
+  
